@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CNB Links</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+<?php include('_header.php'); ?>
 
-<h1>hello there</h1>
-  
-</body>
-</html>
+ <h1>hello there</h1>
+
+ <svg class="icon">
+  <use xlink:href="#icon-web-development"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#icon-ecommerce-services"></use>
+</svg>
+
+
+
+<?php include('_footer.php'); ?>

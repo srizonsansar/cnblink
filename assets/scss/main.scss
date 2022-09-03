@@ -1,0 +1,35 @@
+// Link font family for website
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+// import Bootstraps
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/root';
+
+//  import all scss
+
+// settings
+@import '1-setting/variables';
+@import '1-setting/reset';
+
+// Libarary
+@import '2-libarary/slick';
+
+// Objests
+@import '3-objects/buttons';
+@import '3-objects/titles';
+@import '3-objects/container';
+// Shared
+@import '4-shared/header';
+@import '4-shared/footer';
+
+//Pages-home page
+@import '5-pages/home-page/services';
+
+.icon {
+  width: 500px;
+  height: 500px;
+  fill: $color-orange;
+}
