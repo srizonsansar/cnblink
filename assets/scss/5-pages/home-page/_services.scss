@@ -1,0 +1,113 @@
+.services {
+  padding-bottom: 60px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 80px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 100px;
+  }
+  &--container {
+    @include container;
+  }
+  &--title {
+    @include title;
+    @include title-line;
+    text-align: center;
+  }
+  &__list {
+    padding-top: 20px;
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: 0 -15px;
+    }
+    &--item {
+      margin-bottom: 20px;
+      @include media-breakpoint-up(md) {
+        flex: calc(50% - 20px);
+        margin: 0 10px 20px;
+      }
+      @include media-breakpoint-up(xl) {
+        flex: calc(33.333% - 30px);
+        margin: 0 15px 20px;
+      }
+    }
+    &--link {
+      position: relative;
+      display: block;
+      padding: 20px;
+      border: 1px solid $color-grey-light;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: box-shadow $time-fast;
+      @include media-breakpoint-up(md) {
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      @include media-breakpoint-up(xl) {
+        padding: 40px;
+      }
+      .icon {
+        width: 70px;
+        height: 70px;
+        fill: $color-orange;
+        margin-bottom: 20px;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: $color-orange;
+        transition: width $time-fast;
+      }
+      &:hover {
+        @include media-breakpoint-up(xl) {
+          border-color: transparent;
+          box-shadow: 0 0 20px transparentize($color-black, 0.95);
+        }
+        &:before {
+          @include media-breakpoint-up(xl) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &--title {
+      font-size: 20px;
+      padding-bottom: 10px;
+      text-transform: capitalize;
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 28px;
+      }
+    }
+    &--text {
+      line-height: 1.4;
+      padding-bottom: 30px;
+    }
+    &--btn {
+      color: $color-orange;
+      font-weight: $fw-medium;
+    }
+  }
+  &__btn {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    &--link {
+      @include button-normal;
+      @include button-orange;
+    }
+  }
+}
