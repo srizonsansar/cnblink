@@ -1,0 +1,113 @@
+.whyus {
+  position: relative;
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 10px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 100px;
+  }
+  &--pattern {
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    .icon {
+      width: 120px;
+      height: 120px;
+      fill: lighten($color-grey-light, 10%);
+    }
+  }
+
+  &--container {
+    @include container;
+  }
+  &__head {
+    padding-bottom: 50px;
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 75px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 100px;
+    }
+    &--title {
+      @include title;
+      text-align: center;
+      @include media-breakpoint-up(md) {
+        text-align: left;
+        margin-bottom: 0;
+      }
+      .break {
+        display: block;
+      }
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      &--link {
+        @include button-normal;
+        @include button-orange;
+      }
+    }
+  }
+  &__list {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 -30px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: 0 -50px;
+    }
+    &--item {
+      text-align: center;
+      margin-bottom: 70px;
+      @include media-breakpoint-up(md) {
+        text-align: left;
+        width: calc(50% - 60px);
+        margin: 0 30px 70px;
+      }
+      @include media-breakpoint-up(xl) {
+        width: calc(33.3333% - 100px);
+        margin: 0 50px;
+      }
+    }
+    &--icon {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      padding-bottom: 20px;
+      @include media-breakpoint-up(md) {
+        justify-content: flex-start;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: calc(50% - 70px);
+        width: 70px;
+        height: 70px;
+        background-color: $color-orange;
+        border-radius: 50%;
+        @include media-breakpoint-up(md) {
+          left: 0;
+        }
+      }
+      .icon {
+        height: 70px;
+        width: 70px;
+        position: relative;
+        @include media-breakpoint-up(md) {
+          margin-left: 20px;
+        }
+      }
+    }
+    &--title {
+      font-size: 20px;
+      padding-bottom: 15px;
+    }
+  }
+}

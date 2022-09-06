@@ -1,0 +1,33 @@
+@mixin button-normal {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: $color-white;
+  font-weight: $fw-medium;
+  text-decoration: none;
+  transition: background-color $time-fast ease-in-out;
+  @include media-breakpoint-up(md) {
+    padding: 12px 25px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 15px 30px;
+  }
+}
+
+@mixin button-black {
+  background-color: $color-black;
+  &:hover {
+    @include media-breakpoint-up(xl) {
+      background-color: lighten($color-black, 15%);
+    }
+  }
+}
+
+@mixin button-orange {
+  background-color: $color-orange;
+  &:hover {
+    @include media-breakpoint-up(xl) {
+      background-color: darken($color-orange, 10%);
+    }
+  }
+}
