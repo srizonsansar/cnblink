@@ -10,8 +10,8 @@
         </div>
       </div>      
   </div>
-  <div class="hero__image">
-         <img src="assets/images/hero-1.jpg" class="hero__image--img hero-image-top" alt="">
-         <img src="assets/images/hero-2.jpg" class="hero__image--img hero-image-bottom" alt="">
-      </div>
+    <div class="hero__image">
+      <img src="assets/images/hero-1.jpg" class="hero__image--img hero-image-top" alt="">
+      <img src="assets/images/hero-2.jpg" class="hero__image--img hero-image-bottom" alt="">
+    </div> 
 </section>

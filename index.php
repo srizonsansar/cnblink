@@ -10,5 +10,6 @@
   // Why us section
   include('_whyus.php');
   
+  // footer section
   include('_footer.php');
 ?>

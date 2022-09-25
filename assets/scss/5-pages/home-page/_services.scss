@@ -82,6 +82,7 @@
       }
     }
     &--title {
+      color: $color-black;
       font-size: 20px;
       padding-bottom: 10px;
       text-transform: capitalize;
@@ -93,6 +94,7 @@
       }
     }
     &--text {
+      color: $color-black;
       line-height: 1.4;
       padding-bottom: 30px;
     }
